@@ -2,6 +2,14 @@
     <link rel = "stylesheet"
     type = "text/css"
     href = "character.css" />
+    <!-- esprima required only for !!js/function -->
+<!--<script src="esprima.js"></script>-->
+<script src="https://unpkg.com/esprima@~4.0/dist/esprima.js"></script>
+<script src="js-yaml.min.js"></script>
+<script type="text/javascript">
+var doc = jsyaml.load('greeting: hello\nname: world');
+console.log(doc);
+</script>
 </head><body>
     <h2>Character Sheet</h2>
 

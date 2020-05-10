@@ -49,13 +49,15 @@
   /* Page styling
   ================================== */
   @font-face {
-    font-family: 'Josefin Sans';
+    /*font-family: 'Josefin Sans';*/
+    font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/josefinsans/v15/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKg.ttf) format('truetype');
   }
   @font-face {
-    font-family: 'Josefin Sans';
+    /*font-family: 'Josefin Sans';*/
+    font-family: 'Tahoma';
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.gstatic.com/s/josefinsans/v15/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XbMZhKg.ttf) format('truetype');
@@ -70,8 +72,10 @@
     margin: 0 auto;
     padding: 2em;
     max-width: 800px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2em;
+    /*font-family: 'Josefin Sans';*/
+    font-family: 'Tahoma';
+    /*font-size: 1.2em;*/
+    font-size: 1.2vw;
     background-color: white;
     border: double 3px #DDD;
     border-top: none;
@@ -81,8 +85,9 @@
   h2,
   h3 {
     margin-top: 0;
-    text-align: center;
+    
     font-family: 'Tahoma', cursive;
+    text-align: center;
    
   }
   h4,
@@ -92,10 +97,11 @@
   }
   h3 {
     /*font-size: 1.2em;*/
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
   h4 {
-    font-size: 1em;
+    /*font-size: 1em;*/
+    font-size: 1vw;
   }
   strong {
     color: #434d57;
