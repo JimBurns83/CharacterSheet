@@ -22,13 +22,18 @@ console.log(doc);
           console.log(jsonString);
           console.log($.parseJSON(jsonString));
           document.getElementById("Character_Name").innerHTML = csheet.character.name
+          document.getElementById("subrace").innerHTML = csheet.character.race
+          document.getElementById("race").innerHTML = csheet.character.subrace
       });
     });
 }());
 </script>
 </head><body>
     <h2>Character Sheet</h2>
-    <div><strong>Character Name: </strong><span id="Character_Name"></span></div>
+    <div>
+      <strong>Character Name: </strong><span id="Character_Name"></span><BR/>
+      <i><span id="subrace"></span> <span id="race"></span></i>
+    </div>
 
 <div class="Rtable Rtable--5cols">
 

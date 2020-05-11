@@ -1,6 +1,9 @@
 ---
   character:
     name: "Tears of a Clown"
+    race: Tabaxi
+    class: Rogue
+    subclass: Soul Knife
     proficiency: +2
     abilities:
       strength:
