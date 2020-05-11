@@ -13,19 +13,22 @@ console.log(doc);
 (function () {
 "use strict";
     $(document).ready(function () {
-        $.getJSON('character.yml')
+        $.get('https://raw.githubusercontent.com/JimBurns83/CharacterSheet/master/character.yml')
         .done(function (data) {
           console.log('File load complete');
-          console.log(jsyaml.load(data));
+          var csheet = jsyaml.load(data);
+          console.log(csheet);
           var jsonString = JSON.stringify(data);
           console.log(jsonString);
           console.log($.parseJSON(jsonString));
+          document.getElementById("Character_Name").innerHTML = csheet.character.name
       });
     });
 }());
 </script>
 </head><body>
     <h2>Character Sheet</h2>
+    <div><strong>Character Name: </strong><span id="Character_Name"></span></div>
 
 <div class="Rtable Rtable--5cols">
 
