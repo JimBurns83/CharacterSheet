@@ -7,7 +7,7 @@
     proficiency: +2
     abilities:
       strength:
-        value: 12
-        mod: +1
-        save: +3
+        value: "12"
+        mod: "+1"
+        save: "+3"
       

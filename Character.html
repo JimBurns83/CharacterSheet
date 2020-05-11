@@ -22,8 +22,14 @@ console.log(doc);
           console.log(jsonString);
           console.log($.parseJSON(jsonString));
           document.getElementById("Character_Name").innerHTML = csheet.character.name
-          document.getElementById("subrace").innerHTML = csheet.character.race
-          document.getElementById("race").innerHTML = csheet.character.subrace
+          document.getElementById("race").innerHTML = csheet.character.race
+          document.getElementById("subclass").innerHTML = csheet.character.subclass
+          document.getElementById("class").innerHTML = csheet.character.class
+
+          document.getElementById("strentgthval").innerHTML = csheet.character.abilities.strength.value
+          document.getElementById("strengthmod").innerHTML = csheet.character.abilities.strength.mod
+          document.getElementById("strengthsave").innerHTML = csheet.character.abilities.strength.save
+          
       });
     });
 }());
@@ -32,12 +38,14 @@ console.log(doc);
     <h2>Character Sheet</h2>
     <div>
       <strong>Character Name: </strong><span id="Character_Name"></span><BR/>
-      <i><span id="subrace"></span> <span id="race"></span></i>
+      <i><span id="race"></span> <span id="subclass"></span> <span id="class"></span> </i>
     </div>
 
-<div class="Rtable Rtable--5cols">
+<div class="Rtable Rtable--6cols">
 
-  <div style="order:1;" class="Rtable-cell"><h3>Proficiency Bonus</h3></div>
+  <div style="order:1;" class="Rtable-cell"><div style="text-align: center;"><span><strong>Strength:</strong></span> <span id="strentgthval"></span></div><br/>
+    <span style="float:left;" id="strengthmod"></span><span style="float:right;"  id="strengthsave"></span>
+  </div>
   <div style="order:2;" class="Rtable-cell">+3</div>
   
   <div style="order:1;" class="Rtable-cell"><h3>Armour Class</h3></div>
