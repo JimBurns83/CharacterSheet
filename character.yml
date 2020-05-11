@@ -1,3 +1,10 @@
 ---
   character:
     name: "Tears of a Clown"
+    proficiency: +2
+    abilities:
+      strength:
+        value: 12
+        mod: +1
+        save: +3
+      
